@@ -19,10 +19,10 @@ html {
 }
 
 /* @media screen and (max-width: 1435px) {
-  .box {
-    flex-wrap: wrap;
-  }
-} */
+    .box {
+      flex-wrap: wrap;
+    }
+  } */
 
 @media screen and (min-width: 900px) {
   .box {
@@ -119,17 +119,15 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 
-.price {
-  grid-area: header;
-}
-
 .add-to-cart {
   grid-area: add-to-cart;
 }
 
 .price {
-  margin: auto;
+  grid-area: header;
+  margin: 1rem 1rem 1rem 1rem;
   padding: 0.5rem 7rem;
+  border-radius: 0.5rem;
   background-color: white;
 }
 
@@ -164,4 +162,84 @@ section {
   background-color: #237eb8;
   border: none;
   border-radius: 0.5rem;
+}
+
+.color {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -1rem;
+}
+
+/*####### Product Colors #######*/
+
+.btn-product-color1 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: blue;
+}
+
+.btn-product-color2 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: red;
+}
+
+.btn-product-color3 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: black;
+}
+
+.btn-product-color4 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: linear-gradient(to right, rgb(172, 178, 54) 50%, black 50%);
+}
+
+.btn-product-color5 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: linear-gradient(to right, rgb(42, 145, 255) 50%, black 50%);
+}
+
+.btn-product-color6 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: linear-gradient(to right, hotpink 50%, black 50%);
+}
+
+.btn-product-color7 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: linear-gradient(to right, red 50%, white 50%);
+}
+
+.btn-product-color8 {
+  border-radius: 50%;
+  border: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0.9rem 0 0 0.5rem;
+  background: linear-gradient(to right, black 50%, white 50%);
 }
