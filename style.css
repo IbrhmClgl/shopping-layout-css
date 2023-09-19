@@ -18,34 +18,39 @@ html {
   color: #7b7a7a;
 }
 
-/* @media screen and (max-width: 1435px) {
-    .box {
-      flex-wrap: wrap;
-    }
-  } */
-
-@media screen and (min-width: 900px) {
-  .box {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-  }
+.box {
+  height: 100vh;
+  margin: 20px auto;
 }
 
 .cards {
   background-color: white;
-  /* border: 1px solid black; */
   border-radius: 30px 30px 30px 30px;
-  width: 350px;
-  height: 700px;
-  margin: 30px 30px 30px 20px;
+  /* width: 350px; */
+  width: 22rem;
+  height: 43rem;
+  /* margin: 30px 30px 30px 20px; */
+  margin: 20px auto;
+}
+
+/* ####### Responsive Design ####### */
+@media screen and (min-width: 1444px) {
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    height: 50rem;
+    width: 27rem;
+    margin: 30px 30px 30px 20px;
+  }
 }
 
 /* ####### Set Background Image Asics  #######*/
 .asics-img {
+  position: relative;
   background-image: url("/images/asics.jpg");
   background-size: cover;
   background-position: center;
@@ -104,7 +109,6 @@ section {
 
 /* ####### Styling Inner Box #######*/
 .inner-box {
-  position: relative;
   background-color: var(--background-color);
   border-radius: 1.5rem;
   width: 93%;
@@ -117,6 +121,13 @@ section {
     "color colors"
     "add-to-cart add-to-cart";
   grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 1444px) {
+  .inner-box {
+    width: 93%;
+    height: 17rem;
+  }
 }
 
 .add-to-cart {
@@ -242,4 +253,21 @@ section {
   height: 1.3rem;
   margin: 0.9rem 0 0 0.5rem;
   background: linear-gradient(to right, black 50%, white 50%);
+}
+
+.badge {
+  font-size: small;
+  transform: translate(15rem, -18.5rem);
+  background-color: white;
+  width: fit-content;
+  color: black;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 1444px) {
+  .badge {
+    transform: translate(20rem, -21.5rem);
+  }
 }
