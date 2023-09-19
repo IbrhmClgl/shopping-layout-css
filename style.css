@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/*####### colors #######*/
+:root {
+  --background-color: #f5f5f5;
+  --button-color: purple;
+  --black: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  font-size: medium;
+  color: #7b7a7a;
+}
+
+/* @media screen and (max-width: 1435px) {
+  .box {
+    flex-wrap: wrap;
+  }
+} */
+
+@media screen and (min-width: 900px) {
+  .box {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+}
+
+.cards {
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 30px 30px 30px 30px;
+  width: 350px;
+  height: 700px;
+  margin: 30px 30px 30px 20px;
+}
+
+/* ####### Set Background Image Asics  #######*/
+.asics-img {
+  background-image: url("/images/asics.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px 30px 0 0;
+  height: 40%;
+  width: 100%;
+  position: absolut;
+}
+
+/* ####### Set Background Image Adidas #######*/
+.adidas-img {
+  background-image: url("/images/adidas.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px 30px 0 0;
+  height: 40%;
+  width: 100%;
+  position: absolut;
+}
+
+/* ####### Set Background Image New Balance #######*/
+.nb-img {
+  background-image: url("/images/nb.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px 30px 0 0;
+  height: 40%;
+  width: 100%;
+  position: absolut;
+}
+
+/* ####### Image Gradient ####### */
+.gradient {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, white);
+  top: 0;
+  bottom: 0;
+}
+
+/* ####### "Photo by" part ###### */
+.photo-by {
+  font-size: small;
+  transform: translate(0.7rem, -300%);
+  opacity: 0.8;
+}
+
+h2 {
+  color: var(--black);
+  font-size: 1.3rem;
+}
+
+section {
+  margin: 2.5rem 1.5rem;
+}
+
+/* ####### Styling Inner Box #######*/
+.inner-box {
+  position: relative;
+  background-color: var(--background-color);
+  border-radius: 1.5rem;
+  width: 93%;
+  height: 11.8rem;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "size quantity"
+    "color colors"
+    "add-to-cart add-to-cart";
+  grid-template-columns: 1fr 1fr;
+}
+
+.price {
+  grid-area: header;
+}
+
+.add-to-cart {
+  grid-area: add-to-cart;
+}
+
+.price {
+  margin: auto;
+  padding: 0.5rem 7rem;
+  background-color: white;
+}
+
+.size {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+.quantity {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+
+#select-tag1 {
+  padding-right: 1.5rem;
+  margin: 0rem 0.5rem;
+  border: none;
+}
+#select-tag {
+  padding-right: 1.5rem;
+  border: none;
+}
+
+.color {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+.add-to-cart {
+  margin: 0 1rem 1rem 1rem;
+  color: white;
+  background-color: #237eb8;
+  border: none;
+  border-radius: 0.5rem;
+}
