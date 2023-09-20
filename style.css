@@ -92,6 +92,10 @@ section {
   margin: 3rem 1.5rem;
 }
 
+p {
+  line-height: 1.2rem;
+}
+
 /* ####### Styling Inner Box #######*/
 .inner-box {
   background-color: var(--background-color);
