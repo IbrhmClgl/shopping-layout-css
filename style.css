@@ -31,6 +31,7 @@ html {
   height: 43rem;
   /* margin: 30px 30px 30px 20px; */
   margin: 20px auto;
+  position: relative;
 }
 
 /* ####### Responsive Design ####### */
@@ -48,32 +49,10 @@ html {
   }
 }
 
-/* ####### Set Background Image Asics  #######*/
-.asics-img {
-  position: relative;
-  background-image: url("/images/asics.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 30px 30px 0 0;
-  height: 40%;
-  width: 100%;
-  position: absolut;
-}
-
-/* ####### Set Background Image Adidas #######*/
-.adidas-img {
-  background-image: url("/images/adidas.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 30px 30px 0 0;
-  height: 40%;
-  width: 100%;
-  position: absolut;
-}
-
-/* ####### Set Background Image New Balance #######*/
-.nb-img {
-  background-image: url("/images/nb.jpg");
+/* ####### Set Background Image  #######*/
+.image {
+  display: block;
+  /* background-image: url("/images/asics.jpg"); */
   background-size: cover;
   background-position: center;
   border-radius: 30px 30px 0 0;
@@ -84,18 +63,24 @@ html {
 
 /* ####### Image Gradient ####### */
 .gradient {
-  height: 100%;
+  position: absolute;
+  height: 40%;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, white);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, white);
   top: 0;
   bottom: 0;
+}
+
+.gradient-box {
+  margin-top: -5.1rem;
 }
 
 /* ####### "Photo by" part ###### */
 .photo-by {
   font-size: small;
-  transform: translate(0.7rem, -300%);
-  opacity: 0.8;
+  transform: translate(0.7rem, 0%);
+  opacity: 0.5;
+  color: black;
 }
 
 h2 {
@@ -104,7 +89,7 @@ h2 {
 }
 
 section {
-  margin: 2.5rem 1.5rem;
+  margin: 3rem 1.5rem;
 }
 
 /* ####### Styling Inner Box #######*/
@@ -135,9 +120,11 @@ section {
 }
 
 .price {
+  font-size: larger;
   grid-area: header;
+  width: fit-content;
   margin: 1rem 1rem 1rem 1rem;
-  padding: 0.5rem 7rem;
+  padding: 0.5rem 7rem 0 8rem;
   border-radius: 0.5rem;
   background-color: white;
 }
@@ -168,7 +155,9 @@ section {
 }
 
 .add-to-cart {
-  margin: 0 1rem 1rem 1rem;
+  position: relative;
+  margin: 0 1rem -1rem 1rem;
+  top: -1.3rem;
   color: white;
   background-color: #237eb8;
   border: none;
@@ -256,8 +245,10 @@ section {
 }
 
 .badge {
+  position: relative;
   font-size: small;
-  transform: translate(15rem, -18.5rem);
+  top: -11rem;
+  right: -14.5rem;
   background-color: white;
   width: fit-content;
   color: black;
@@ -266,8 +257,21 @@ section {
   opacity: 0.8;
 }
 
+.badge-adidas {
+  opacity: 0;
+}
+
 @media screen and (min-width: 1444px) {
   .badge {
-    transform: translate(20rem, -21.5rem);
+    top: -14rem;
+    right: -19.5rem;
+  }
+
+  .add-to-cart {
+    margin: 0 1rem 0rem 1rem;
+  }
+
+  .price {
+    padding: 1rem 9rem 0.1rem 9rem;
   }
 }
